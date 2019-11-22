@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/vodafone-logo3.0.png">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="jquery-2.1.4.min.js"></script>
+
+    <title>Final-Calculator</title>
+</head>
+
+
+
+<body>
+    <div class="container-fluid" id="container">
+
+        <!-- IMAGE HEADER -->
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2" id="banner">
+                <img src="images/editeur7.0.png" alt="banner" class="fond">
+            </div>
+        </div>
+    
+
+
+        <!-- BLOC INFO -->
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div id="bloc-infos-rg">Choisis tes appels, SMS et Internet en fonction de tes besoins ! <span style="font-size:8px;">(1)</span></div>
+            </div>
+        </div>
+       
+
+        <!-- LES BLOC + SLIDE -->
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+
+                <!----BLOC APPEL---->
+                <div class="mySlides fade"> 
+                    <div class="bull" id="cont_h" name="cont_h">
+                        <div id="bloc-appels" class="stick">                         
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                APPELS
+                        </div>
+                        <div class="bull-h">
+                            <div class="bull2 pulse bulle-offer" id="30m" data-label="- 30 Min Appels locaux" data-price="500"><img id="0" src="images/sans-ombrage/bloc-30mn.png"></div>
+                            <div class="bull2 pulse bulle-offer" id="1h" data-label="- 1 H Appels locaux" data-price="1000"><img id="1" src="images/sans-ombrage/bloc-1h.png"></div>
+                            <div class="bull2 pulse bulle-offer" id="2h" data-label="- 2 H Appels locaux" data-price="1800"><img id="2" src="images/sans-ombrage/bloc-2h.png"></div>
+                            <div class="bull2 pulse bulle-offer" id="4h" data-label="- 4 H Appels locaux" data-price="3400"><img id="3" src="images/sans-ombrage/bloc-4h.png"></div>
+                            <div class="bull2 pulse bulle-offer" id="option-1" data-label="- APPELS + SMS ILLIMITÉS SWE vers Vodafone" data-price="100"><img id="1" src="images/sans-ombrage/bloc-appels-sms.png"></div>
+                        </div>
+                        <!----BLOC APPEL RESPONSIVE---->
+                        <div class="bull-h-mobile">
+                            <div class="bull2 pulse bulle-offer" id="30m" data-label="- 30 Min Appels locaux" data-price="500"><img id="0" src="images/bloc-30mn-mobile.png"></div>
+                            <div class="bull2 pulse bulle-offer" id="1h" data-label="- 1 H Appels locaux" data-price="1000"><img id="1" src="images/bloc-1h-mobile.png"></div>
+                            <div class="bull2 pulse bulle-offer" id="2h" data-label="- 2 H Appels locaux" data-price="1800"><img id="2" src="images/bloc-2h-mobile.png"></div>
+                            <div class="bull2 pulse bulle-offer" id="4h" data-label="- 4 H Appels locaux" data-price="3400"><img id="3" src="images/bloc-4h-mobile.png"></div>
+                            <div class="bull2 pulse bulle-offer" id="6h" data-label="- 6 H Appels locaux" data-price="5200"><img id="4" src="images/bloc-6h-mobile.png"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!----BLOC SMS---->
+                <div class="mySlides fade">
+                    <div class="bull" id="cont_sms" name="cont_sms">
+                        <div id="bloc-sms" class="stick">
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                            SMS
+                        </div>
+                        <div class="bull-h bull-s">
+                            <div class="bull3 pulse bulle-offer" id="50sms" data-label="- 50 SMS locaux" data-price="300"><img id="1" src="images/sans-ombrage/bloc-50sms.png"></div>
+                            <div class="bull3 pulse bulle-offer" id="100sms" data-label="- 100 SMS locaux" data-price="500"><img id="2" src="images/sans-ombrage/bloc-100sms.png"></div>
+                            <div class="bull3 pulse bulle-offer" id="200sms" data-label="- 200 SMS locaux" data-price="800"><img id="3" src="images/sans-ombrage/bloc-200sms.png"></div>
+                            <div class="pulse bulle-offer" id="option-2" data-label="- SMS ILLIMITÉS 24H/24 vers Vodafone" data-price="100"><img id="2" src="images/sans-ombrage/bloc-sms.png"></div>
+                            <div class="pulse bulle-offer" id="option-3" data-label="- SMS ILLIMITÉS 24H/24 vers Vini et Vodafone" data-price="500"><img id="3" src="images/sans-ombrage/bloc-sms3.png"></div>
+                        </div>
+                    </div>    
+                </div>
+                
+                <!----BLOC INTERNET---->
+                <div class="mySlides fade">    
+                    <div class="bull" id="cont_go" name="cont_go">
+                        <div id="bloc-internet" class="stick">                        
+                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                INTERNET
+                        </div>
+                        <div class="bull-h">
+                            <div class="bull4 pulse bulle-offer" id="250mo" data-label="- 250 Mo Internet" data-price="500"><img id="1" src="images/sans-ombrage/bloc-250mo.png"></div>
+                            <div class="bull4 pulse bulle-offer" id="500mo" data-label="- 500 Mo Internet" data-price="900"><img id="2" src="images/sans-ombrage/bloc-500mo.png"></div>
+                            <div class="bull4 pulse bulle-offer" id="1go" data-label="- 1 Go Internet" data-price="1400"><img id="3" src="images/sans-ombrage/bloc-1go.png"></div>
+                            <div class="bull4 pulse bulle-offer" id="2go" data-label="- 2 Go Internet" data-price="2400"><img id="4" src="images/sans-ombrage/bloc-2go.png"></div>
+                            <div class="bull4 pulse bulle-offer" id="5go" data-label="- 5 Go Internet" data-price="3900"><img id="5" src="images/sans-ombrage/bloc-5go.png"></div>
+                        </div>
+                    </div>    
+                </div>      
+            </div>
+        </div>
+
+
+
+        <!----BLOC BONUS---->
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+
+                <!--CONDITION ICI-->
+                <div id="condition-pack">
+                    <center>
+                        <div class="bull" name="cont_bonus" style="margin-top:15px;">
+                            <div class="animated bounce bulle-offer" id="bonus1Go" data-label="- Option 1 Go Internet" data-price="1" data-total-min="3000" data-label-active="" data-checkgroup="bonus"><img id="1" src="images/bloc-1f1g.png"></div>
+                            <div class="animated bounce bulle-offer" id="bonus2Go" data-label="- Option 2 Go Internet" data-price="1" data-total-min="3500" data-label-active="" data-checkgroup="bonus"><img id="2" src="images/bloc-1f2g.png"></div>
+                        </div>
+                    </center>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <!----BLOC PACKS---->
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <div class="bull" id="cont_pack" name="cont_pack">
+                    <div id="bloc-pack">LES DIFFÉRENTS PACKS</div>
+                    <div class="pulse bulle-offer" id="pack-1" data-label="- 30 Min Appels locaux <br>- APPELS ILLIMITÉS* <br>- 50 SMS locaux" data-price="910" data-checkgroup="pack"><img id="1" src="images/pack-1.png"></div>
+                    <div class="pulse bulle-offer" id="pack-2" data-label="- 1 H Appels locaux <br>- APPELS ILLIMITÉS* <br>- SMS ILLIMITÉS 24H/24 vers Vini et Vodafone*" data-price="1490" data-checkgroup="pack"><img id="2" src="images/pack-2.png"></div>
+                    <div class="pulse bulle-offer" id="pack-3" data-label="- 1 H Appels locaux <br>- APPELS ILLIMITÉS* <br>- SMS ILLIMITÉS 24H/24 vers Vini et Vodafone* <br>- 2 Go" data-price="2700" data-checkgroup="pack"><img id="3" src="images/pack-3.png"></div>
+                    <div class="pulse bulle-offer" id="pack-4" data-label="- 3 H Appels locaux <br>- APPELS ILLIMITÉS* <br>- SMS ILLIMITÉS 24H/24 vers Vini et Vodafone* <br>- 3 Go" data-price="3900" data-checkgroup="pack"><img id="4" src="images/pack-4.png"></div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- BLOC RESULTATS -->
+        <div class="row"  style="margin-top:15px;" id="main-container">
+            <div class="col-md-8 col-md-offset-2 footer">
+                    <button class="accordion animated-button1" style="width:100%;">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        <div id="bloc-resultats">VOTRE FORFAIT SMILE</div>
+                    </button>
+                <div id="calculateur">
+                    <a id="rafraichir" class="bouton">Recommencer la simulation</a>
+                    <div class="container" id="container" class="panel">
+                        <div class="row" id="row">
+                            <div class="col-lg-6 placement" id="place">
+                                <div class="tarif">0</div><span id="francs">Fr</span>
+                            </div>
+                            <div class="col-lg-6">
+                                <div id="resultat"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        
+        
+    </div>
+    
+
+<!-- ==========================================SCRIPT============================================== -->
+<!-- ===================EFFET SLIDE FADE===================== -->
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        }
+    </script>
+    
+
+
+<!-- =================EFFET DU CALCULATEUR=================== -->
+    <script>
+        var count_bulle = 0;
+        var total_price = 0;
+        var label_detail = '';
+        var label_active = '';
+            
+        calcul_total();
+        
+        $(".bulle-offer").click(function(){
+            if( $(this).data('checkgroup') ){ // checkgroup : group dont on ne peux selection qu un element
+        bulselect = $(this).hasClass('selected');
+            $('.bulle-offer[data-checkgroup='+$(this).data('checkgroup')+']').removeClass('selected');
+            if( !bulselect ){
+            $(this).addClass('selected');
+        }
+        } else {
+            $(this).toggleClass('selected');
+        }
+        
+        preset();
+            calcul_total();
+        });
+        $('#rafraichir').click(function() {
+            $(".bulle-offer.selected").each(function(){
+                $(this).removeClass('selected');
+                calcul_total();
+            });
+        });
+            
+            
+        function preset(){
+        // cache les illimite si on prends un pack
+        if( $('#pack-1').hasClass('selected') || $('#pack-2').hasClass('selected')
+        || $('#pack-3').hasClass('selected') || $('#pack-4').hasClass('selected') ){
+        ['option-1', 'option-2', 'option-3'].forEach(function(el){
+            $('#'+el).removeClass('selected');
+        });
+        $('#cont_options').hide();
+        } else {
+        $('#cont_options').show();
+        }
+        }
+            
+        function calcul_total(){
+            count_bulle = 0;
+            total_price = 0;
+            label_detail = '';
+            label_active = '';
+            $(".bulle-offer.selected").each(function(){
+                if( typeof($(this).data('total-min')) == 'undefined' ){
+                    count_bulle += 1;
+                    total_price += $(this).data('price');
+                    label_detail += $(this).data('label') + '<br>';
+                }
+            });
+            $(".bulle-offer").each(function(){
+                if( typeof($(this).data('total-min')) != 'undefined' ){
+                    if(count_bulle>=3) $("#contactus").show();
+                    else $("#contactus").hide();
+                    if(count_bulle>=3 && $(this).data('total-min')<=total_price
+            && $('.bulle-offer.selected[data-checkgroup=pack]').length==0 ){
+                        $(this).show();
+                        if( typeof($(this).data('label-active')) != 'undefined' ) {
+                            label_active += $(this).data('label-active');
+                        }
+                    } else {
+                        $(this).removeClass('selected');
+                        $(this).hide();
+                    }
+                }
+            });
+            $(".bulle-offer.selected").each(function(){
+                if( typeof($(this).data('total-min')) != 'undefined' ){
+                    count_bulle += 1;
+                    total_price += $(this).data('price');
+                    label_detail += $(this).data('label') + '<br>';
+                }
+            });
+            
+            if(count_bulle<3) label_detail += "<i></i>";
+            $("#calculateur>#container>#row>#place>.tarif").html(total_price);
+            $("#resultat").html(label_detail);
+            $("#calculateur>#placement>.info").html(label_active);
+        }
+    </script>
+
+
+
+<!-- ===================EFFET ACCORDION===================== -->
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "none") {
+              panel.style.display = "block";
+            } else {
+              panel.style.display = "none";
+            }
+          });
+        }
+    </script>
+
+</body>
+</html>
